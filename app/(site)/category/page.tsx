@@ -6,6 +6,7 @@ import {ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon} from '
 import Star from "@/app/(site)/Component/Star/Star";
 import {Story} from "@/app/(site)/Component/Story/Story";
 import Breadcrumb from "@/app/(site)/Component/Breadcrumb/Breadcrumb";
+import Card from '../Component/Card/Card'
 
 const sortOptions = [
     {name: 'محبوب ترین', href: '#', current: true},
@@ -68,10 +69,10 @@ export default function Example() {
 
     return (
         <>
-            <Story />
-            <div className="bg-white">
-                <Breadcrumb />
-                <div>
+        <div className='py-2'>
+                 <Breadcrumb />
+                 </div>
+                <div className='bg-white'>
                     {/* Mobile filter dialog */}
                     <Transition.Root show={mobileFiltersOpen} as={Fragment}>
                         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileFiltersOpen}>
@@ -305,128 +306,21 @@ export default function Example() {
                                 <div className="lg:col-span-5 bg-[#f5f5f5] p-2">
                                     <div className={"grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 justify-center "}>
 
-
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={4}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={4}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={2}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={5}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={4}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto"}>
-
-                                            <div className="flex flex-col items-center pb-10">
-                                                <img className="w-24 h-24 mb-3 rounded-full shadow-lg"
-                                                     src={'../../../avatar.png'} alt="Bonnie image"/>
-                                                <span className="text-sm text-gray-500 "><Star score={4}/> </span>
-
-                                                <h5 className="mb-1 text-xl font-medium text-gray-900  ">گروه
-                                                    موسیقی
-                                                    7</h5>
-                                                <span className="text-sm text-gray-500  ">تهران</span>
-                                                <div className="flex mt-4 md:mt-6">
-                                                    <a href="#"
-                                                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                                                        مشاهده</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
+                                    <Card/>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </main>
                 </div>
-            </div>
-        </>
+         </>
     )
 }

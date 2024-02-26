@@ -23,7 +23,7 @@ export default function Navbar() {
 
     <Disclosure
       as="nav"
-      className=" fixed top-0 left-0 right-0 bg-white   text-neutral-900  border-b border-neutral-200 backdrop-blur-sm z-50"
+      className=" fixed top-0 left-0 right-0 bg-white   text-neutral-900  border-b border-neutral-200 backdrop-blur-sm z-50  "
     >
       {({ open }: { open: any }) => (
         <>

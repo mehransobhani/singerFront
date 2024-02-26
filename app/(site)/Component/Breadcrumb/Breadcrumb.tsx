@@ -4,7 +4,7 @@ export default  function Breadcrumb(){
     return(<>
 
 
-        <nav className="flex px-5 py-2" aria-label="Breadcrumb">
+        <nav className="flex px-5 py-2 bg-white  " aria-label="Breadcrumb">
             <ol className="inline-flex items-center   ">
                 <li className="inline-flex items-center ">
                     <a href="#"
