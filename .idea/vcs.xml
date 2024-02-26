@@ -12,6 +12,7 @@
     <mapping directory="$PROJECT_DIR$/../../../LocalGit/LaravelShop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../LocalGit/Shop/L" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../LocalGit/Shop/LT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../patterns/decorector/laravel-decorator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../patterns/decorector/laravel-design-patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../patterns/s/design-patterns-with-laravel" vcs="Git" />

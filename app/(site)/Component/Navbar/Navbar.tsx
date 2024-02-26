@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import logo from "@/public/image/logo/logo.png"
+import Image from "next/image";
 
 const navigation:{name:string,href:string,current:boolean}[] = [
   { name: "صفحه اصلی", href: "/", current: true },
@@ -25,7 +27,7 @@ export default function Navbar() {
     >
       {({ open }: { open: any }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto   px-4 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                   <div className="flex flex-1 items-center justify-start">
                       <div className=" flex items-center sm:hidden ">
@@ -42,6 +44,10 @@ export default function Navbar() {
                               )}
                           </Disclosure.Button>
                       </div>
+                      <div className={"w-16"}>
+                          <Image src={logo} alt={"website logo"} width={200} height={200}/>
+                      </div>
+                      {/*<span className="text-rose-500  font-bold  sm:text-xl mx-4">S I N G E R</span>*/}
 
                       <div className="hidden sm:mx-6 sm:block">
                           <div className="flex space-x-5 items-center" style={{direction: "rtl"}}>
@@ -66,7 +72,6 @@ export default function Navbar() {
                   </div>
 
                   <div className="flex items-center justify-end  ">
-                      <span className="text-rose-500 font-extrabold my-3 text-left mx-6">S I N G E R</span>
                       <div className="  flex items-center w-10">
                           <Link
                               href="https://github.com/humberni/halley"
