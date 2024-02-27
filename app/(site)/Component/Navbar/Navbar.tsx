@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const navigation:{name:string,href:string,current:boolean}[] = [
   { name: "صفحه اصلی", href: "/", current: true },
-  { name: "هنرمندان", href: "#services", current: false },
-  { name: "درباره ما", href: "#pricing", current: false },
+  { name: "هنرمندان", href: "/category", current: false },
+  { name: "درباره ما", href: "/product", current: false },
   { name: "تماس با ما", href: "#faq", current: false },
   { name: "سوالات متداول", href: "#contact", current: false },
 ];
@@ -23,11 +23,11 @@ export default function Navbar() {
 
     <Disclosure
       as="nav"
-      className=" fixed top-0 left-0 right-0 bg-white   text-neutral-900  border-b border-neutral-200 backdrop-blur-sm z-50  "
+      className=" fixed top-0 left-0 right-0 bg-white   text-neutral-900  border-b border-neutral-200 backdrop-blur-sm z-40  "
     >
       {({ open }: { open: any }) => (
         <>
-          <div className="mx-auto   px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto   px-4 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                   <div className="flex flex-1 items-center justify-start">
                       <div className=" flex items-center sm:hidden ">
@@ -44,10 +44,12 @@ export default function Navbar() {
                               )}
                           </Disclosure.Button>
                       </div>
-                      <div className={"w-16"}>
-                          <Image src={logo} alt={"website logo"} width={200} height={200}/>
+                      <Link href={"/"}>
+                      <div className={"w-24 mr-5 sm:mr-0 bg-white"}>
+                          <Image src={logo} quality={100} alt={"website logo"} width={100} height={100} layout={"responsive"}/>
                       </div>
-                      {/*<span className="text-rose-500  font-bold  sm:text-xl mx-4">S I N G E R</span>*/}
+                      </Link>
+                      {/*<span className="text-rose-500  font-bold  sm:text-xl mx-4"> S I M B E L L</span>*/}
 
                       <div className="hidden sm:mx-6 sm:block">
                           <div className="flex space-x-5 items-center" style={{direction: "rtl"}}>
@@ -59,7 +61,7 @@ export default function Navbar() {
                                           item.current
                                               ? "text-rose-500   "
                                               : "text-neutral-900  hover:text-rose-500",
-                                          "text-base font-medium mx-3"
+                                          "text-base font-bold mx-3"
                                       )}
                                       aria-current={item.current ? "page" : undefined}
                                   >

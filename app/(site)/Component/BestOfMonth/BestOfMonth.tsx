@@ -16,10 +16,10 @@ export default function BestOfMonth() {
     return (
 
         <div className="py-5">
-            <h1 className="text-2xl font-bold text-center">
+            <h2 className="text-2xl font-bold text-center">
                 برترین های <br/>{" "}
                 <span className="text-rose-500 font-extrabold my-3">این ماه</span>
-            </h1>
+            </h2>
             <div className={"py-[50px]  md:mx-[100px]"} style={{cursor: "grab"}}>
                 <Swiper
                     spaceBetween={10}
