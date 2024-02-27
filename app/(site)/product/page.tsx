@@ -1,9 +1,14 @@
 import Star from "@/app/(site)/Component/Star/Star";
 import Sections from "@/app/(site)/Component/Sections/Sections";
+import Breadcrumb from "@/app/(site)/Component/Breadcrumb/Breadcrumb";
 
 export default function Page() {
     return <>
-        <section className="relative pt-12 bg-blueGray-50 text-black ">
+        <div className='py-2'>
+            <Breadcrumb/>
+        </div>
+
+        <section className="relative  bg-white text-black  ">
             <div className="items-center flex flex-wrap pt-[50px] pb-[10px]">
                 <div className="grid grid-cols-1 md:grid-cols-2  gap-12 p-8">
                     <div className="min-w-full ml-auto mr-auto rounded p-4 bg-[#f5f5f5]">
