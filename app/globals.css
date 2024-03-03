@@ -6,17 +6,11 @@ body {
     direction: rtl;
     background: #f5f5f5;
 }
-
-
-.loading{
-    animation: "loading";
-    background: rebeccapurple!important;
+.calendarContainer .selected button, .calendarButton,.calendarContainer .selected button:active, .calendarContainer .selected button:focus, .calendarContainer .selected button:hover :not([disabled]){
+    background: #f43f5e!important;
+    border-color: #f43f5e!important;
 }
-@keyframes loading {
-0%{
-    width: 0;
-}
-    100%{
-        width: 100%;
-    }
+.today button{
+    border: 3px solid #f43f5e !important ;
+
 }

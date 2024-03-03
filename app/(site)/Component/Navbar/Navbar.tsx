@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import logo from "@/public/image/logo/logo.png"
+import logo from "@/public/image/logo/logo.webp"
 import Image from "next/image";
 
 const navigation:{name:string,href:string,current:boolean}[] = [
@@ -45,7 +45,7 @@ export default function Navbar() {
                           </Disclosure.Button>
                       </div>
                       <Link href={"/"}>
-                      <div className={"w-24 mr-5 sm:mr-0 bg-white"}>
+                      <div className={"w-16 mr-5 sm:mr-0 bg-white"}>
                           <Image src={logo} quality={100} alt={"website logo"} width={100} height={100} layout={"responsive"}/>
                       </div>
                       </Link>
