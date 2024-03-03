@@ -69,10 +69,8 @@ export default function Example() {
 
     return (
         <>
-        <div className='py-2'>
-                 <Breadcrumb />
-                 </div>
-                <div className='bg-white'>
+                  <Breadcrumb />
+                 <div className='bg-white'>
                     {/* Mobile filter dialog */}
                     <Transition.Root show={mobileFiltersOpen} as={Fragment}>
                         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileFiltersOpen}>
@@ -303,7 +301,7 @@ export default function Example() {
                                 </form>
 
                                 {/* Product grid */}
-                                <div className="lg:col-span-5 bg-[#f5f5f5] p-2">
+                                <div className="lg:col-span-5 bg-[#f8f8f8] p-2">
                                     <div className={"grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 justify-center "}>
 
                                     <Card/>

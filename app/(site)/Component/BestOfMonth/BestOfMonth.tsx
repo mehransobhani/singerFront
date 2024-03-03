@@ -15,7 +15,7 @@ import Card from "../Card/Card";
 export default function BestOfMonth() {
     return (
 
-        <div className="py-5">
+        <div className="py-5 bg-[#f8f8f8]">
             <h2 className="text-2xl font-bold text-center">
                 برترین های <br/>{" "}
                 <span className="text-rose-500 font-extrabold my-3">این ماه</span>

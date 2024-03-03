@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar'; 
+import 'swiper/css/scrollbar';
 export const Story = () => {
     return (
 
-            <div className={" py-8 bg-[#f5f5f5] px-6 "} style={{cursor: "grab"}} title={"رویداد ها"}>
+            <div className={" py-8 bg-[#f8f8f8] px-6 w-full "} style={{cursor: "grab"}} title={"رویداد ها"}>
                 <Swiper
                     spaceBetween={3}
                     slidesPerView={4}

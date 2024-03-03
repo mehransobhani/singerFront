@@ -5,20 +5,24 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import logo from "@/public/image/logo/logo.webp"
 import Image from "next/image";
+import {usePathname} from "next/navigation";
 
-const navigation:{name:string,href:string,current:boolean}[] = [
-  { name: "صفحه اصلی", href: "/", current: true },
-  { name: "هنرمندان", href: "/category", current: false },
-  { name: "درباره ما", href: "/product", current: false },
-  { name: "تماس با ما", href: "#faq", current: false },
-  { name: "سوالات متداول", href: "#contact", current: false },
-];
+
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+    const pathName=usePathname();
+
+    const navigation:{name:string,href:string,current:boolean}[] = [
+        { name: "صفحه اصلی", href: "/", current: pathName=="/" },
+        { name: "هنرمندان", href: "/category", current: pathName=="/category" },
+        { name: "درباره ما", href: "/product", current: pathName=="/product" },
+        { name: "تماس با ما", href: "/contact-us", current: pathName=="/contact-us" },
+        { name: "سوالات متداول", href: "/faq", current: pathName=="/faq" },
+    ];
   return (
 
     <Disclosure
