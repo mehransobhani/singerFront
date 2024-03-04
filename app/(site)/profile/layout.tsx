@@ -13,9 +13,8 @@ export default function RootLayout({
 }>) {
     return (
         <>
-             <div className="mt-20 min-h-screen mx-20">
+             <div className="mt-16  ">
                  <Navbar />
-
                  {children}
             </div>
         </>

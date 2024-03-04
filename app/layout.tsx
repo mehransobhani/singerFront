@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body className={myFont.className}>{children}</body>
+      <body className={[myFont.className , "min-h-screen"].join(" ")}>{children}</body>
     </html>
   )
 }
