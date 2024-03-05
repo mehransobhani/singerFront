@@ -9,7 +9,7 @@ export function Hero() {
         <div className="pt-6 md:pt-32 justify-center text-center sm:justify-start sm:text-start">
           <h1 className="text-5xl font-bold text-black">
            خوش امدید به  <br />{" "}
-            <span className="text-rose-500 font-extrabold my-3"> S I M B E L L</span>
+            <span className="text-rose-500 font-extrabold my-3"> S E M B E A T </span>
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12">
             اولین و بزرگ ترین سامانه یافتن هنرمندان و خوانندگان کشور و رزرو این عزیزان برای مراسمات شما

@@ -1,4 +1,4 @@
-import logo from "@/public/image/logo/logo.webp"
+import logo from "@/public/image/logo/newLogo.webp"
 import samandehi from "@/public/image/Namad/samandehi.png"
 import enamad from "@/public/image/Namad/enamad.jpeg"
 import Image from "next/image";

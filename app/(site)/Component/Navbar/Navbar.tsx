@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import logo from "@/public/image/logo/logo.webp"
+import logo from "@/public/image/logo/newLogo.webp"
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 
