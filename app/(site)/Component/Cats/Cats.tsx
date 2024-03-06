@@ -52,7 +52,7 @@ export default function Example(): JSX.Element {
                             <div
                                 className=" bg-white border border-gray-200 rounded-lg shadow-md ">
                                 <div className={"h-80 overflow-hidden"}>
-                                     <Image className="rounded-t-lg" src={callout.imageSrc} alt={callout.imageAlt} layout={"response"} />
+                                     <Image placeholder="blur" className="rounded-t-lg" src={callout.imageSrc} alt={callout.imageAlt} layout={"response"} />
                                  </div>
                                 <div className="p-5">
                                     <Link href={callout.href}>
@@ -65,7 +65,7 @@ export default function Example(): JSX.Element {
                                     </p>
                                     <Link href={callout.href}
                                           className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-rose-500 rounded-lg hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300">
-                                       
+
                                         مشاهده
 
                                     </Link>

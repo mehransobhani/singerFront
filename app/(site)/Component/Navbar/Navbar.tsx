@@ -80,7 +80,7 @@ export default function Navbar() {
                   <div className="flex items-center justify-end  ">
                       <div className="  flex items-center w-10">
                           <Link
-                              href="https://github.com/humberni/halley"
+                              href="/profile/notification"
                               target="_blank"
                               className=" block"
                           >
@@ -95,7 +95,7 @@ export default function Navbar() {
                       </div>
                       <div className="  flex items-center w-10">
                           <Link
-                              href="https://github.com/humberni/halley"
+                              href="/profile"
                               target="_blank"
                               className=" block"
                           >

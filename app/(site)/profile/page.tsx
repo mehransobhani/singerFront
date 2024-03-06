@@ -4,29 +4,29 @@ export default function Home() {
     return (
         <>
             <div className={"bg-white"}>
-            <div className={"md:mx-20 mx-5 py-10 divide-rose space-y-12"}>
+            <div className={"md:mx-5 mx-5 py-10 divide-rose space-y-12"}>
                  <div className="space-y-12">
-                    <div className="border-b border-gray-900/10 pb-12">
+                    <div className="   pb-12">
                         <span className={"grid justify-center"}>
                             <UserCircleIcon className="h-10 w-10 text-gray-700  me-2" />
                         </span>
                         <p className="mt-2 text-center leading-6 text-gray-600">
                           در این بخش میتوانید اطلاعات حساب کاربری خود را مشاهده و ویرایش کنید .
                         </p>
-                        <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+                        <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-16">
                             <div className="sm:col-span-1 ">
-                                <div className=" grid grid-cols-1 gap-x-6   border rounded  p-5  shadow-xl">
-                                    <h2 className={"text-rose-500 font-bold border-b pb-2"}>
-                                        ویرایش اطلاعات
+                                <div className=" grid grid-cols-1 gap-x-6   border rounded px-5 py-3  shadow-xl">
+                                    <h2 className={"text-gray-500 font-bold border-b pb-3"}>
+                                        ویرایش اطلاعات کاربری
                                     </h2>
 
-                                    <form className={"gap-y-5 grid mt-5"}>
-                                        <div>
+                                    <form className={"gap-y-5 grid grid-cols-6 gap-x-5 mt-5"}>
+                                        <div className={"col-span-6 md:col-span-3"}>
                                             <label htmlFor="first-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 نام
                                             </label>
-                                            <div className="mt-2">
+                                            <div className="mt-2 ">
                                                 <input
                                                     type="text"
                                                     defaultValue={"mehran"}
@@ -40,7 +40,7 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div>
+                                        <div className={"col-span-6 md:col-span-3"}>
                                             <label htmlFor="last-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 نام خانوادگی
@@ -57,7 +57,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className={"col-span-6 md:col-span-3"}>
                                             <label htmlFor="first-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 ایمیل
@@ -74,8 +74,8 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
+                                        <div className={"col-span-6 md:col-span-3"}>
 
-                                        <div>
                                             <label htmlFor="last-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 شماره همراه
@@ -92,7 +92,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                                        <div className="col-span-6 mt-10 flex items-center justify-center gap-x-6">
 
                                             <button
                                                 type="submit"
@@ -106,14 +106,14 @@ export default function Home() {
 
                             </div>
                             <div className="sm:col-span-1">
-                                <div className=" grid grid-cols-1 gap-x-6    border p-5 rounded  shadow-xl">
+                                <div className=" grid grid-cols-1 gap-x-6    border py-3 px-5 rounded  shadow-xl">
                                     <div>
-                                        <h2 className={"text-rose-500 font-bold  border-b pb-2"}>
+                                        <h2 className={"text-gray-500 font-bold border-b pb-3"}>
                                             ویرایش رمز عبور
                                         </h2>
                                     </div>
-                                    <form className={"gap-y-5 grid mt-5"}>
-                                        <div>
+                                    <form className={"gap-y-5 grid mt-5 grid-cols-6 gap-x-5"}>
+                                        <div className={"col-span-6 md:col-span-2"}>
                                             <label htmlFor="first-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 رمز عبور فعلی
@@ -121,7 +121,7 @@ export default function Home() {
                                             <div className="mt-2">
                                                 <input
                                                     type="password"
-                                                     name="first-name"
+                                                    name="first-name"
                                                     id="first-name"
                                                     placeholder={"رمز عبور فعلی خود را وارد کنید"}
 
@@ -129,7 +129,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className={"col-span-6 md:col-span-2"}>
                                             <label htmlFor="last-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 رمز عبور جدید
@@ -144,7 +144,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className={"col-span-6 md:col-span-2"}>
                                             <label htmlFor="first-name"
                                                    className="block text-sm font-medium leading-6 text-gray-900">
                                                 تکرار رمز عبور جدید
@@ -159,7 +159,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                                        <div className="col-span-6 mt-10 flex items-center justify-center gap-x-6">
 
                                             <button
                                                 type="submit"

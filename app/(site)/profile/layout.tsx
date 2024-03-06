@@ -13,9 +13,11 @@ export default function RootLayout({
 }>) {
     return (
         <>
-             <div className="mt-16  ">
+             <div className="mt-16 flex  gap-2 bg-[#f5f5f5]">
                  <Navbar />
+                 <div className={"flex-1 min-h-screen"}>
                  {children}
+                 </div>
             </div>
         </>
     );
