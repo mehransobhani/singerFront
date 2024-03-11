@@ -15,7 +15,7 @@ export default function Home() {
                         </p>
                         <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-16">
                             <div className="sm:col-span-1 ">
-                                <div className=" grid grid-cols-1 gap-x-6   border rounded px-5 py-3  shadow-xl">
+                                <div className=" grid grid-cols-1 gap-x-6   border rounded px-5 py-3  shadow">
                                     <h2 className={"text-gray-500 font-bold border-b pb-3"}>
                                         ویرایش اطلاعات کاربری
                                     </h2>
@@ -106,7 +106,7 @@ export default function Home() {
 
                             </div>
                             <div className="sm:col-span-1">
-                                <div className=" grid grid-cols-1 gap-x-6    border py-3 px-5 rounded  shadow-xl">
+                                <div className=" grid grid-cols-1 gap-x-6    border py-3 px-5 rounded  shadow">
                                     <div>
                                         <h2 className={"text-gray-500 font-bold border-b pb-3"}>
                                             ویرایش رمز عبور

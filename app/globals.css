@@ -14,3 +14,13 @@ body {
     border: 3px solid #f43f5e !important ;
 
 }
+
+
+.swiper-pagination-bullet-active  {
+    background: #f43f5e!important; /* Change to your desired active color */
+}
+
+.bg-gitar{
+    background-image: url("../public/image/banner/gitar.jpg");
+    background-size: cover;
+}

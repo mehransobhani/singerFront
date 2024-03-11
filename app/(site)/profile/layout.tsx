@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/app/(site)/profile/Component/Navbar/Navbar";
+import BottomNav from "@/app/(site)/profile/Component/BottomNav/BottomNav";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -13,11 +14,9 @@ export default function RootLayout({
 }>) {
     return (
         <>
-             <div className="mt-16 flex  gap-2 bg-[#f5f5f5]">
-                 <Navbar />
-                 <div className={"flex-1 min-h-screen"}>
-                 {children}
-                 </div>
+             <div className="mt-16 bg-[#f5f5f5]">
+                  {children}
+                 <BottomNav/>
             </div>
         </>
     );
