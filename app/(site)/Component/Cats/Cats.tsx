@@ -1,4 +1,4 @@
-'use client';
+
 import speaker from "@/public/image/banner/speaker.png"
 import djBanner from "@/public/image/banner/dj.jpg"
 import singerBanner from "@/public/image/banner/singer.jpg"

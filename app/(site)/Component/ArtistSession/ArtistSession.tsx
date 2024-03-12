@@ -4,7 +4,7 @@ export  default  function ArtistSession()
     return(<>
 
             <div className={"relative w-full   bg-gitar bg-no-repeat bg-fixed bg-center "}>
-                <div className={"w-full h-full bg-white bg-opacity-85 py-10 flex justify-center flex-col "}>
+                <div className={"w-full h-full bg-[#f8f8f8] bg-opacity-85 py-10 flex justify-center flex-col "}>
                     <h2 className="text-2xl font-bold text-center">
                         شروع فعالیت <br/>{" "}
                         <span className="text-rose-500 font-extrabold my-3">هنرمندان </span>

@@ -87,7 +87,7 @@ export  default  function Chat()
             title:"خطای سایت",
         },
     ]
-    const message=[
+    const message: {id: number, admin: number, date: string, message: string}[]=[
         {
         id:1,
         admin:0,
@@ -252,7 +252,7 @@ export  default  function Chat()
                 <div className="p-4 h-[70vh]  overflow-y-auto  pb-12">
 
                     {
-                        message.map((item) => (
+                        message.map((item: {id: number, admin: number, date: string, message: string}) => (
                             <>
                                 {item.admin ? <AdminChatMessage message={item.message}/> :
                                     <UserChatMessage message={item.message}/>}

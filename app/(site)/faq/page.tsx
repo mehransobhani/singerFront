@@ -1,7 +1,6 @@
 import Step from "@/app/(site)/Step/Step";
 import Breadcrumb from "@/app/(site)/Component/Breadcrumb/Breadcrumb";
 import Accordion from "@/app/(site)/Component/Accordion/Accordion";
-import Accordion2 from "@/app/(site)/Component/Accordion/Accordian2";
 
 export default function page() {
 

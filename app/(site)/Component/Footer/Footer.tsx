@@ -12,19 +12,7 @@ export default function Footer()
         <footer className="bg-white border z-50">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    <div className="mb-6 md:mb-0 grid justify-center">
-                        <Link href={"/"} className="flex items-center">
-                            <Image src={logo} alt={"website logo"} width={100}/>
-                        </Link>
 
-
-                    </div>
-                    <div className="mb-6 md:mb-0 grid justify-center">
-                        <Image src={enamad} alt={"enamad"} width={100}/>
-                    </div>
-                    <div className="mb-6 md:mb-0 grid justify-center">
-                        <Image src={samandehi} alt={"samandehi"} width={100}/>
-                    </div>
 
                     <div className="grid grid-cols-2 gap-8 sm:gap-10 sm:grid-cols-3">
 
@@ -69,11 +57,23 @@ export default function Footer()
                         </div>
 
                     </div>
+
+                    <div className="mb-6 md:mb-0 grid justify-center">
+                        <Image src={enamad} alt={"enamad"} width={100}/>
+                    </div>
+                    <div className="mb-6 md:mb-0 grid justify-center">
+                        <Image src={samandehi} alt={"samandehi"} width={100}/>
+                    </div>
+                    <div className="mb-6 md:mb-0 grid justify-center">
+                        <Link href={"/"} className="flex items-center">
+                            <Image src={logo} alt={"website logo"} width={100}/>
+                        </Link>
+                    </div>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8"/>
                 <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center ">© 2023 <a
-              href="https://flowbite.com/" className="hover:text-rose-500">سیمبل™</a>. تمامی حقوق سایت محفوظ است .
+              href="https://flowbite.com/" className="hover:text-rose-500">سمبیت™</a>. تمامی حقوق سایت محفوظ است .
           </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
                         <a href="#" className="text-gray-500 hover:text-gray-900 ">
