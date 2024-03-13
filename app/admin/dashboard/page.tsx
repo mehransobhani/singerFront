@@ -1,6 +1,6 @@
 import Breadcrumb from "@/app/(site)/Component/Breadcrumb/Breadcrumb";
 import {Squares2X2Icon} from "@heroicons/react/20/solid";
-import PageHeader from "@/app/admin/Component/PageHeader/PageHeader";
+import PageHeader from "@/app/Component/PageHeader";
 import ColorBox from "@/app/admin/Component/ColorBox/ColorBox";
 import {BellAlertIcon} from "@heroicons/react/24/solid";
 

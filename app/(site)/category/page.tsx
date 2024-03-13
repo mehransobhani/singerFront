@@ -8,7 +8,7 @@ import {Story} from "@/app/(site)/Component/Story/Story";
 import Breadcrumb from "@/app/(site)/Component/Breadcrumb/Breadcrumb";
 import Card from '../Component/Card/Card'
 import Pagination from "@/app/Component/Pagination";
-import MultiRange from "@/app/Component/MultiRange";
+import MultiRange from "@/app/Component/Form/MultiRange";
 
 const sortOptions = [
     {name: 'محبوب ترین', href: '#', current: true},

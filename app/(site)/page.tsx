@@ -5,7 +5,7 @@ import {Story} from "@/app/(site)/Component/Story/Story";
 import Cats from "@/app/(site)/Component/Cats/Cats";
 import UserMessage from "@/app/(site)/Component/UserMessage/UserMessage";
 import ArtistSession from "@/app/(site)/Component/ArtistSession/ArtistSession";
-import CustomerGroup from "@/app/(site)/Component/CustomerGroup/CustomerGroup"; 
+import CustomerGroup from "@/app/(site)/Component/CustomerGroup/CustomerGroup";
 
 export default function Home() {
 

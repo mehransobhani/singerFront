@@ -16,7 +16,7 @@ export default function Breadcrumb({list}: { list: breadcrumb[] }) {
                 <ol className="inline-flex items-center   ">
                     <li className="inline-flex items-center ">
                         <Link href={"/admin/dashboard"}
-                              className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-rose-500 ">
+                              className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-rose-500 " aria-label={"dashboard"}>
                             <Squares2X2Icon className="h-6 w-6 text-gray-500 mx-1 sm:mx-4 hover:text-rose-500"/>
                         </Link>
                     </li>

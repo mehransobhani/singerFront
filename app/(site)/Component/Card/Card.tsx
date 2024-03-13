@@ -1,19 +1,27 @@
-import avatar from "@/public/image/avatar/avatar.png"
+import avatar from "@/public/image/banner/iran.jpg"
 import Image from "next/image"
 import Star from "../Star/Star"
 import { MapPinIcon } from "@heroicons/react/24/solid"
 import Link from "next/link";
+import RoseButton from "@/app/Component/Button/RoseButton";
 
 export default function Card() {
     return (
         <div
             className={"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow"}>
 
-            <div className="flex flex-col items-center py-10">
+            <div className="flex flex-col items-center pb-5">
 
 
-                <Image className="w-24 h-24 mb-3 rounded-full shadow-lg border"
+                {/*<Image className="w-24 h-24 mb-3 rounded-full shadow-lg border" width={100} height={10} layout={"full"}*/}
+                {/*    src={avatar} alt="Bonnie image" />*/}
+                <div className={"h-60 w-full"}>
+   <Image className="  mb-3   border w-full h-full"
+
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,..."
                     src={avatar} alt="Bonnie image" />
+                </div>
 
 <span className=" my-1 text-sm text-gray-500 "><Star score={4} /> </span>
 
@@ -40,9 +48,10 @@ export default function Card() {
 
 
                 <div className="flex mt-4 md:mt-6">
-                    <Link href={"product"}
-                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg  focus:ring-4 focus:outline-none focus:ring-[#491639] ">
-                        مشاهده</Link>
+                    <Link href={"product"}>
+                    <RoseButton title={"مشاهده"} />
+                    </Link>
+
                 </div>
 
             </div>

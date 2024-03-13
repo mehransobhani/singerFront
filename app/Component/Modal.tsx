@@ -6,7 +6,7 @@ export  default  function Modal({ isOpen, onClose, children , title }:{isOpen:bo
     if(!isOpen)
         return ;
     return(<>
-         <div className="bg-black bg-opacity-80 flex  overflow-y-auto overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen max-h-full" onClick={onClose}>
+         <div className="bg-black bg-opacity-70 flex  overflow-y-auto overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen max-h-full backdrop-blur-sm" onClick={onClose}>
             <div className="relative p-4 w-full max-w-2xl max-h-full "
                  onClick={(e):void=>{ e.stopPropagation()}}>
                  <div className="relative bg-white rounded-lg shadow">

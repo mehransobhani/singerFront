@@ -50,7 +50,7 @@ export default function Navbar() {
                       </div>
                       <Link href={"/"}>
                       <div className={"w-16 mr-5 sm:mr-0 bg-white"}>
-                          <Image src={logo} quality={100} alt={"website logo"} width={100} height={100} layout={"responsive"}/>
+                          <Image src={logo} loading={"eager"} quality={50} alt={"website logo"} width={100} height={100} layout={"responsive"}/>
                       </div>
                       </Link>
                       {/*<span className="text-rose-500  font-bold  sm:text-xl mx-4"> S I M B E L L</span>*/}

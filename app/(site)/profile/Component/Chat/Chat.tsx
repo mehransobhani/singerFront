@@ -87,105 +87,105 @@ export  default  function Chat()
             title:"خطای سایت",
         },
     ]
-    const message: {id: number, admin: number, date: string, message: string}[]=[
-        {
-        id:1,
-        admin:0,
-        date:"1402/12/12",
-        message:"خطای سایت",
-    },
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        ,
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:0,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-        {
-            id:1,
-            admin:1,
-            date:"1402/12/12",
-            message:"خطای سایت",
-        },
-    ]
+    // const message: {id: number, admin: number, date: string, message: string}[]=[
+    //     {
+    //     id:1,
+    //     admin:0,
+    //     date:"1402/12/12",
+    //     message:"خطای سایت",
+    // },
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     ,
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:0,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    //     {
+    //         id:1,
+    //         admin:1,
+    //         date:"1402/12/12",
+    //         message:"خطای سایت",
+    //     },
+    // ]
     return(<>
 
         <div className="flex h-[90vh] overflow-hidden">
@@ -251,14 +251,14 @@ export  default  function Chat()
 
                 <div className="p-4 h-[70vh]  overflow-y-auto  pb-12">
 
-                    {
-                        message.map((item: {id: number, admin: number, date: string, message: string}) => (
-                            <>
-                                {item.admin ? <AdminChatMessage message={item.message}/> :
-                                    <UserChatMessage message={item.message}/>}
-                            </>
-                        ))
-                    }
+                    {/*{*/}
+                    {/*    message.map((item: {id: number, admin: number, date: string, message: string}) => (*/}
+                    {/*        <>*/}
+                    {/*            {item.admin ? <AdminChatMessage message={item.message}/> :*/}
+                    {/*                <UserChatMessage message={item.message}/>}*/}
+                    {/*        </>*/}
+                    {/*    ))*/}
+                    {/*}*/}
 
                 </div>
                 <footer className="bg-white border-t border-gray-300 p-4 w-full">

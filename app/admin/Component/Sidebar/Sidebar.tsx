@@ -51,7 +51,7 @@ export default function Sidebar() {
             href:"/admin/ticket",
             icon:<ChatBubbleBottomCenterTextIcon className={["h-6 w-6 " ,pathName=="/admin/ticket"?"text-rose-500":"text-gray-500" ].join(" ")} />,
             current:pathName=="/admin/ticket"
-        },, {
+        }, {
             title:" حسابداری",
             href:"/admin/accounting",
             icon:<BanknotesIcon className={["h-6 w-6 " ,pathName=="/admin/accounting"?"text-rose-500":"text-gray-500" ].join(" ")} />,
@@ -85,7 +85,6 @@ export default function Sidebar() {
                 <div className="flex w-56  items-center justify-center h-16 bg-rose-500">
                     <h1 className="text-xl font-bold text-white">
                         پنل مدیریت <br/>{" "}
-                        <span className="text-black font-extrabold my-3"> S E M B E A T </span>
                     </h1>
 
                  </div>
@@ -93,7 +92,7 @@ export default function Sidebar() {
             }
             <div className="flex  w-full   items-center justify-between h-16  border-b border-gray-200">
                 <div className="flex items-center px-4">
-                    <button className="text-gray-500 focus:outline-none focus:text-gray-700" onClick={()=>{setOpenSidebar(!openSidebar)}}>
+                    <button className="text-gray-500 focus:outline-none focus:text-gray-700" onClick={()=>{setOpenSidebar(!openSidebar)}}  aria-label={"button"}>
                         <Bars3Icon className="h-6 w-6 text-gray-800" />
 
                     </button>
