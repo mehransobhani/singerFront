@@ -2,7 +2,7 @@
 import Breadcrumb from "@/app/admin/Component/Breadcrumb/Breadcrumb";
 import Panel from "@/app/admin/Component/Panel/Panel";
 import PageHeader from "@/app/Component/PageHeader";
-import {UserCircleIcon} from "@heroicons/react/24/solid";
+import {UserCircleIcon, UserGroupIcon} from "@heroicons/react/24/solid";
 import {Team} from "@/app/(site)/Component/Team/Team";
 import Input from "@/app/Component/Form/Input";
 import RoseButton from "@/app/Component/Button/RoseButton";
@@ -11,12 +11,11 @@ import Modal from "@/app/Component/Modal";
 import ProfileTab from "@/app/admin/Component/Tabs/ProfileTab";
 
 
-
 export default function Home() {
 
     return (
         <>
-            <Modal isOpen={false} title={"افزود عضو جدید"}  >
+            <Modal isOpen={false} title={"افزود عضو جدید"}>
 
                 <h2>افزودن عضو جدید</h2>
 
@@ -41,20 +40,29 @@ export default function Home() {
 
             </Modal>
 
-            <Breadcrumb list={[{
-                title: "تیم ",
-                href: "",
-                current: true
-            }]}/>
+            <Breadcrumb list={[
+                {
+                    title: "حساب کاربری ",
+                    href: "/admin/profile",
+                    current: false
+                },
+                {
+                    title: "ویرایش تیم ",
+                    href: "",
+                    current: true
+                }
+            ]}/>
+            <ProfileTab/>
+
             <Panel>
+
                 <PageHeader
                     title={"اطلاعات حساب شما"}
-                    icon={<UserCircleIcon className="h-10 w-10 text-gray-700"/>}
-                    description={"هنرمند عزیز , در این بخش شما میتوانید اطلاعات حساب کاربری خود را مشاهده و ویرایش کنید"}
+                    icon={<UserGroupIcon className="h-10 w-10 text-gray-700"/>}
+                    description={"هنرمند عزیز , در این بخش شما میتوانید گروه خود را مشاهده و ویرایش کنید"}
                 />
-                <ProfileTab />
                 <div className={"grid justify-center my-10"}>
-                <RoseButton title={"افزودن عضو جدید"}/>
+                    <RoseButton title={"افزودن عضو جدید"}/>
                 </div>
                 <h2>
                     اعضای تیم شما
